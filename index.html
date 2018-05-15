@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>My first web page</title>
+
+	<link rel="stylesheet" href="styles/styles.css">
+
+	<!-- jQuery library (served from Google) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="scripts/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="styles/jquery.bxslider.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header>
+		<img src="http://lorempixel.com/51/51" alt="">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+
+		<ul class="bxslider">
+			<li><img src="http://placekitten.com/1500/300?1" /></li>
+			<li><img src="http://placekitten.com/1500/300?2" /></li>
+			<li><img src="http://placekitten.com/1500/300?3" /></li>
+			<li><img src="http://placekitten.com/1500/300?4" /></li>
+		</ul>
+
+		<h1>Site heading here</h1>
+
+		<div class="tile">
+			<h2>Title Header</h2>
+			<img src="http://placekitten.com/300/150" alt="">
+			<p>This is some content This is some content This is some content This is some content </p>
+		</div>
+		<div class="tile">
+			<h2>Title Header</h2>
+			<img src="http://placekitten.com/300/150" alt="">
+			<p>This is some content This is some content This is some content This is some content </p>
+		</div>
+		<div class="tile">
+			<h2>Title Header</h2>
+			<img src="http://placekitten.com/300/150" alt="">
+			<p>This is some content This is some content This is some content This is some content </p>
+		</div>
+
+	</div>
+
+
+	<script>
+		$(document).ready(function () {
+			$('.bxslider').bxSlider({
+				auto: true,
+				speed: 300,
+				pause: 5000,
+				mode: "fade"
+			});
+		});
+	</script>
+
+</body>
+
+</html>
